@@ -530,6 +530,17 @@ footer{background:#020407;color:rgba(255,255,255,.3);
   .ti-ic{width:60px;height:60px}
 }
 
+
+/* ── CLIENT REQUEST: 一時非表示 ── */
+/* セクション4・5を非表示 */
+#s4, #s5 { display:none !important }
+/* 前後のstrip非表示 */
+#flow + .strip,
+#s4 + .strip,
+#s5 + .strip { display:none !important }
+/* goalセクション: バッジとタイトルのみ非表示、以降は表示 */
+#goal { display:flex !important }
+.gtitle { display:none !important }
 </style>
 </head>
 <body>
@@ -543,9 +554,9 @@ footer{background:#020407;color:rgba(255,255,255,.3);
   <ul class="nav-ul">
     <li><a href="#s123">私たちの活動</a></li>
     <li><a href="#flow">取り組み</a></li>
-    <li><a href="#s4">中長期ビジョン</a></li>
-    <li><a href="#s5">長期構想</a></li>
-    <li><a href="#goal">最終目標</a></li>
+    <li></li>
+    <li></li>
+    <li></li>
   </ul>
   <button id="hbg" aria-label="メニュー"><span></span><span></span><span></span></button>
 </nav>
@@ -556,9 +567,9 @@ footer{background:#020407;color:rgba(255,255,255,.3);
   <a href="#s123">譲渡拠点</a>
   <a href="#s123">里親支援の新しい仕組み</a>
   <a href="#flow">取り組みの流れ</a>
-  <a href="#s4">中長期ビジョン</a>
-  <a href="#s5">長期構想</a>
-  <a href="#goal">最終目標</a>
+  
+  
+  
   <div class="fsclose" id="fsclose">✕&ensp;閉じる</div>
 </div>
 
